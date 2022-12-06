@@ -1,3 +1,6 @@
+import { readFile } from '../../common/readFile.js';
 import { compute } from "./algorithm.js";
 
-console.log(compute('a'));
+const data = await readFile('./input');
+
+console.log(compute(data));
